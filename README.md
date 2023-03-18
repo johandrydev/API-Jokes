@@ -14,7 +14,15 @@ Para utilizar este Repositorio, solo debes seguir los siguientes pasos:
 4.  Abre tu navegador y navega a la ruta `http://localhost:8000/api/jokes`.
 5.  Tambien puedes ejecutar el comando `go build .` para compilar el proyecto y luego ejecutar el archivo binario generado.
 
-Para utilizar esta API, solo debes hacer una petición GET a la ruta `/api/jokes`. La respuesta será 25 chistes aleatorio en formato JSON.:
+Para utilizar el contenedor de Docker, sigue los siguientes pasos:
+
+1.  Para compilar `docker build --file Dockerfile --tag <docker_username>/api-jokes .`
+2.  Para correr use el comando `docker run -p 8000:8000 <docker_username>/api-jokes`
+
+Para descargar la imagen de Docker Hub, sigue los siguientes pasos:
+
+1.  Para descargar la imagen `docker pull johandrydev/api-jokes`
+2.  Para correr use el comando `docker run -p 8000:8000 johandrydev/api-jokes`
 
 Rutas
 -----
