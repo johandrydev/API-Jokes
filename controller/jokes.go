@@ -41,7 +41,7 @@ func response(w http.ResponseWriter, data interface{}, message string, status in
 
 func GetJokes(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet {
-		http.Error(w, "Method not allowed", http.StatusBadRequest)
+		response(w, nil, "Method not allowed", http.StatusBadRequest, true)
 		return
 	}
 
