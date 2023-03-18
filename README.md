@@ -6,6 +6,14 @@ Esta API proporciona una manera divertida de obtener chistes aleatorios.
 Instrucciones
 -------------
 
+Para utilizar este Repositorio, solo debes seguir los siguientes pasos:
+
+1.  Clona este repositorio en tu computadora.
+2.  Instala las dependencias con el comando `go mod tidy`.
+3.  Ejecuta el servidor con el comando `go run main.go`.
+4.  Abre tu navegador y navega a la ruta `http://localhost:8000/api/jokes`.
+5.  Tambien puedes ejecutar el comando `go build .` para compilar el proyecto y luego ejecutar el archivo binario generado.
+
 Para utilizar esta API, solo debes hacer una petición GET a la ruta `/api/jokes`. La respuesta será 25 chistes aleatorio en formato JSON.:
 
 Rutas
